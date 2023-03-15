@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --fs-12: 12px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fs-70: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs_12 {
+  font-size: var(--fs-12);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fs_16 {
+  font-size: var(--fs-16);
 }
 
-.App-link {
-  color: #61dafb;
+.fs_18 {
+  font-size: var(--fs-18);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fs_20 {
+  font-size: var(--fs-20);
+}
+
+.fs_24 {
+  font-size: var(--fs-24);
+}
+
+.fs_32 {
+  font-size: var(--fs-32);
+}
+
+.fs_70 {
+  font-size: var(--fs-70);
+}
+
+.ff_grandlander {
+  font-family: 'Grandstander';
 }
