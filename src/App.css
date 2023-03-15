@@ -54,3 +54,11 @@
 .ff_inter {
   font-family: 'Inter', sans-serif;
 }
+
+.nav_bg {
+  background: #08012C;
+  opacity: 0.8;
+}
+.nav_links{
+  font-size: var(--fs-18);
+}
