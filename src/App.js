@@ -6,6 +6,13 @@ import HeroSection from './components/HeroSection';
 import AboutUs from './components/AboutUs';
 import GamePlay from './components/GamePlay';
 import Slider from './components/Slider';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import TeamFrame from "./components/TeamFrame";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
+import Roadmap from "./components/Roadmap";
 
 function App() {
   return (
@@ -17,6 +24,10 @@ function App() {
       <AboutUs />
       <GamePlay />
       <Slider/>
+      <Roadmap />
+      <TeamFrame />
+      <Faq />
+      <Footer />
     </>
   );
 }
