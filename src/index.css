@@ -1,5 +1,606 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+@import url("https://fonts.googleapis.com/css2?family=Mandali&display=swap");
+.bg-dark-blue {
+  background-color: #090128;
 }
-
+.roadmap-bg {
+  background-color: #09002e;
+  background-blend-mode: color-dodge;
+}
+.ff-mandali {
+  font-family: "Mandali", sans-serif;
+}
+.footer-bg-img {
+  background-image: url(/src/assets/image/webp/galaxy-night-panorama.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+  background-color: #090128;
+  background-blend-mode: color-dodge;
+}
+.sociallogo {
+  transition: 0.5s ease-in-out;
+}
+.sociallogo:hover {
+  transform: translateY(-12px);
+}
+.faq-ufo {
+  animation: ufo 4s linear infinite;
+}
+/* ROADMAP */
+.roadmap-astronauts-bg {
+  background: linear-gradient(180deg, #2063c6 13.87%, #5096d1 96.81%);
+  border-radius: 100%;
+  width: 124px;
+  height: 124px;
+}
+.roadmapastronaut {
+  border-radius: 100%;
+  width: 88px;
+  height: 88px;
+}
+.roadmapastronaut2 {
+  border-radius: 100%;
+  width: 88px;
+  height: 88px;
+  rotate: 300deg;
+}
+.man-in-space-suit {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  animation: man-in-space-suit 4s linear infinite;
+  width: 150px;
+  height: 250px;
+}
+.phase-1 {
+  position: absolute;
+  top: -18px;
+  left: 39%;
+  max-width: 390px;
+  height: 127px;
+}
+.phase-2-5 {
+  position: absolute;
+  max-width: 250px;
+  height: 72px;
+}
+.roadmapufo {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  animation: ufo 4s linear infinite;
+}
+.man-in-space-suit-roadmap {
+  position: absolute;
+  right: 2%;
+  top: 58%;
+  animation: man-in-space-suit-roadmap 8s linear infinite;
+  width: 240px;
+  height: 130px;
+}
+.rocket-roadmap {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  animation: rocket 4s linear infinite;
+}
+.rocket-roadmap-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  animation: rocket-2 4s linear infinite;
+}
+.right {
+  left: 50%;
+  width: 50%;
+}
+.box {
+  transform: translateY(-4%);
+}
+.timeline::after {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.dot::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(180deg, #2063c6 13.87%, #5096d1 96.81%);
+  border-radius: 50%;
+  top: 0;
+}
+.left::after {
+  content: "";
+  left: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.right::after {
+  content: "";
+  left: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.timeline::after {
+  left: 20px;
+}
+.left::after {
+  left: 20px;
+}
+.right::after {
+  left: 20px;
+}
+.right {
+  left: 0;
+  width: 100%;
+}
+.left {
+  left: 0;
+  width: 100%;
+}
+/* --------- */
+/*  ACCORDIAN  */
+.accordion-button:not(.collapsed) {
+  color: #ffffff !important;
+  background-color: #090128 !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.accordion {
+  --bs-accordion-bg: none !important;
+  --bs-accordion-border-color: none !important;
+}
+.accordion-button {
+  color: #ffffff !important;
+}
+.accordion-item {
+  color: #ffffff !important;
+  border: 1px solid #1e8cd6 !important;
+  border-radius: 8px !important;
+}
+.accordion-button::after {
+  background-image: url(/src/assets/image/svg/downArrow.svg) !important;
+}
+/* ----------- */
+/*   TEAM   */
+.team-members-christina {
+  position: absolute;
+  top: 9%;
+  left: 14%;
+}
+.team-members-david {
+  position: absolute;
+  top: 9%;
+  left: 14%;
+}
+.team-members-annika {
+  position: absolute;
+  top: 9%;
+  left: 14%;
+}
+/* ---------- */
+@keyframes man-in-space-suit {
+  0% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+@keyframes rocket {
+  0% {
+    transform: translateY(10%) translateX(7%);
+  }
+  50% {
+    transform: translateY(0px) translateX(0);
+  }
+  100% {
+    transform: translateY(10%) translateX(7%);
+  }
+}
+@keyframes rocket-2 {
+  0% {
+    transform: translateY(10%) translateX(-7%);
+  }
+  50% {
+    transform: translateY(0px) translateX(0);
+  }
+  100% {
+    transform: translateY(10%) translateX(-7%);
+  }
+}
+@keyframes ufo {
+  0% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+@keyframes man-in-space-suit-roadmap {
+  0% {
+    rotate: 25deg;
+  }
+  50% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 25deg;
+  }
+}
+@media (min-width: 575.98px) {
+  .team-members-christina {
+    top: 9%;
+    left: 140px;
+  }
+  .team-members-david {
+    top: 9%;
+    left: 142px;
+  }
+  .team-members-annika {
+    top: 9%;
+    left: 142px;
+  }
+  .team-text-bg-box {
+    background-image: url(/src/assets/image/svg/text-bg-box.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 190px;
+    top: 90%;
+    left: 37%;
+  }
+  @keyframes ufo {
+    0% {
+      transform: translateX(50%);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+}
+@media (min-width: 767.98px) {
+  .team-members-christina {
+    top: 9%;
+    left: 15%;
+  }
+  .team-members-david {
+    top: 9%;
+    left: 16%;
+  }
+  .team-members-annika {
+    top: 9%;
+    left: 232px;
+  }
+  .team-text-bg-box {
+    left: 31%;
+  }
+  .team-text-bg-box-annika {
+    left: 280px;
+  }
+  @keyframes ufo {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .team-members-christina {
+    top: 9%;
+    left: 110px;
+  }
+  .team-members-david {
+    top: 9%;
+    left: 111px;
+  }
+  .team-members-annika {
+    top: 9%;
+    left: 38%;
+  }
+  .team-text-bg-box {
+    left: 35%;
+  }
+  .team-text-bg-box-annika {
+    left: 402px;
+  }
+  @keyframes ufo {
+    0% {
+      transform: translateY(25px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(25px);
+    }
+  }
+  .man-in-space-suit {
+    top: 80px;
+    left: 0;
+    width: 250px;
+    height: 400px;
+  }
+  .roadmapdashline {
+    position: absolute;
+    top: 0;
+    left: 95px;
+  }
+  .roadmap-astronaut-bg {
+    position: absolute;
+    top: -20px;
+    left: 5%;
+  }
+  .roadmap-astronaut-bg-2 {
+    position: absolute;
+    top: 21%;
+    right: 50px;
+  }
+  .roadmap-astronaut-bg-3 {
+    position: absolute;
+    top: 43%;
+    left: 5%;
+  }
+  .roadmap-astronaut-bg-4 {
+    position: absolute;
+    top: 65%;
+    right: 50px;
+  }
+  .roadmap-astronaut-bg-5 {
+    position: absolute;
+    bottom: -10px;
+    left: 31%;
+  }
+  .roadmaparrowleft2 {
+    position: absolute;
+    top: 25%;
+    transform: translateX(-6%);
+    right: 18%;
+  }
+  .roadmaparrowleft {
+    position: absolute;
+    top: 69%;
+    transform: translateY(8%) translateX(-6%);
+    right: 18%;
+  }
+  .roadmaparrow {
+    position: absolute;
+    top: 21px;
+    left: 18%;
+    transform: translateX(3%);
+  }
+  .roadmaparrow2 {
+    position: absolute;
+    top: 47%;
+    left: 18%;
+    transform: translateX(3%);
+  }
+  .roadmaparrow3 {
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+    transform: translateX(-5%);
+  }
+  .phase-1 {
+    top: -18px;
+    left: 35%;
+  }
+  .phase-2 {
+    top: 23%;
+    right: 36%;
+  }
+  .phase-3 {
+    top: 44%;
+    left: 35%;
+  }
+  .phase-4 {
+    top: 66%;
+    right: 36%;
+  }
+  .phase-5 {
+    bottom: 36px;
+    left: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .team-members-christina {
+    top: 9%;
+    left: 14%;
+  }
+  .team-members-david {
+    top: 9%;
+    left: 15%;
+  }
+  .team-members-annika {
+    top: 9%;
+    left: 15%;
+  }
+  .team-text-bg-box {
+    left: 29%;
+  }
+  .footer-bg-img {
+    background-size: 100% 100%;
+  }
+  .roadmapdashline {
+    top: 0;
+    left: 185px;
+  }
+  .roadmap-astronaut-bg {
+    top: -20px;
+    left: 12%;
+  }
+  .roadmap-astronaut-bg-2 {
+    top: 21%;
+    right: 135px;
+  }
+  .roadmap-astronaut-bg-3 {
+    top: 43%;
+    left: 12%;
+  }
+  .roadmap-astronaut-bg-4 {
+    top: 64%;
+    right: 135px;
+  }
+  .roadmap-astronaut-bg-5 {
+    bottom: -10px;
+    left: 34%;
+  }
+  .roadmaparrowleft2 {
+    top: 25%;
+    transform: translateX(-3%) translateY(15%);
+    right: 23%;
+  }
+  .roadmaparrowleft {
+    top: 68%;
+    transform: translateY(8%) translateX(-3%);
+    right: 23%;
+  }
+  .roadmaparrow {
+    top: 21px;
+    left: 23%;
+    transform: translateX(3%);
+  }
+  .roadmaparrow2 {
+    top: 47%;
+    left: 23%;
+    transform: translateX(3%);
+  }
+  .roadmaparrow3 {
+    bottom: 30px;
+    left: 46%;
+    transform: translateX(-8%);
+  }
+  .phase-1 {
+    top: -18px;
+    left: 37%;
+  }
+  .phase-2 {
+    top: 23%;
+    right: 38%;
+  }
+  .phase-3 {
+    top: 44%;
+    left: 37%;
+  }
+  .phase-4 {
+    top: 66%;
+    left: 38%;
+  }
+  .phase-5 {
+    bottom: 36px;
+    left: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .team-members-christina {
+    top: 9%;
+    left: 12%;
+  }
+  .team-members-david {
+    top: 9%;
+    left: 13%;
+  }
+  .team-members-annika {
+    top: 9%;
+    left: 13%;
+  }
+  .team-text-bg-box {
+    left: 25%;
+  }
+  .roadmapdashline {
+    top: 0;
+    left: 21%;
+  }
+  .roadmap-astronaut-bg {
+    top: -20px;
+    left: 17%;
+  }
+  .roadmap-astronaut-bg-2 {
+    top: 22%;
+    right: 18%;
+  }
+  .roadmap-astronaut-bg-3 {
+    top: 43%;
+    left: 17%;
+  }
+  .roadmap-astronaut-bg-4 {
+    top: 65%;
+    right: 18%;
+  }
+  .roadmap-astronaut-bg-5 {
+    bottom: -10px;
+    left: 37%;
+  }
+  .roadmaparrowleft {
+    top: 69%;
+    transform: translateY(12%) translateX(5%);
+    right: 28%;
+  }
+  .roadmaparrowleft2 {
+    transform: translateY(10%) translateX(5%);
+    top: 26%;
+    right: 28%;
+  }
+  .roadmaparrow {
+    top: 21px;
+    left: 345px;
+  }
+  .roadmaparrow2 {
+    top: 47%;
+    left: 345px;
+  }
+  .roadmaparrow3 {
+    bottom: 30px;
+    left: 47%;
+    transform: translateX(-5%);
+  }
+  .phase-1 {
+    top: -18px;
+    left: 39%;
+  }
+  .phase-2 {
+    top: 23%;
+    right: 40%;
+  }
+  .phase-3 {
+    top: 44%;
+    left: 39%;
+  }
+  .phase-4 {
+    top: 66%;
+    left: 40%;
+  }
+  .phase-5 {
+    bottom: 36px;
+    left: 58%;
+  }
+  .man-in-space-suit-roadmap {
+    width: 288px;
+    height: 177px;
+  }
+}
