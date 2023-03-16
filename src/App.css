@@ -12,11 +12,11 @@
 :root {
   --fs-12: 12px;
   --fs-16: 16px;
-  --fs-18: 18px;
+  --fs-18: 14px;
   --fs-20: 20px;
   --fs-24: 24px;
   --fs-32: 32px;
-  --fs-70: 70px;
+  --fs-70: 56px;
 }
 
 .fs_12 {
@@ -59,6 +59,238 @@
   background: #08012C;
   opacity: 0.8;
 }
-.nav_links{
+
+.nav_links {
   font-size: var(--fs-18);
+  font-weight: 400;
+  color: white !important;
+  font-family: 'Grandstander';
+}
+
+.bg-image-header {
+  background-image: url("/src/assets/image/webp/bg-img-header.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutsection_bg_img {
+  background-image: url("/src/assets/image/webp/Group-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.lnear_bg {
+  background: radial-gradient(0%, 0% at 50.44% 49.6%, #003869a1 0%, #0707157b 100%);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.hero-section-layer {
+  background: linear-gradient(180deg, rgba(0, 0, 18, 0) 0%, rgba(0, 0, 18, 0.398875) 28.44%, rgba(0, 0, 18, 0.600125) 52.4%, #000012 100%);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 100px;
+  width: 100%;
+}
+
+.gif_border {
+  border: 3.36338px solid #1A8BD7;
+  border-radius: 8.96901px;
+}
+
+.text-width {
+  max-width: 486px;
+}
+
+.play_now_btn {
+  padding: 8px 30px;
+  background: linear-gradient(180deg, #FF00F4 0%, #3D78FE 100%);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.bg_lightblue {
+  background-color: #090128 !important;
+}
+
+.lightblue_box {
+  background: linear-gradient(60.99deg, #be6b75c2 13%, #201429 87%);
+  opacity: 0.4;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  z-index: 1 !important;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.earth_img_2 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 10%;
+}
+
+.text_shadow {
+  -webkit-text-stroke: 1px #BA5EA7;
+}
+
+.man-diamond-img {
+  position: absolute;
+  bottom: 80px;
+  left: 140px;
+  animation: mymove 3s linear infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateX(150px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(150px);
+  }
+}
+
+.game-play-bgimage {
+  background-image: url("./assets/image/webp/game-play-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.student-img {
+  position: absolute;
+  top: 6%;
+  right: 10%;
+  animation: student-img 3s linear infinite;
+}
+
+@keyframes student-img {
+  0% {
+    transform: translateX(150px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(150px);
+  }
+}
+
+.ufo-2-img {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  animation: ufo-1 9s linear infinite;
+}
+
+@keyframes ufo-1 {
+  0% {
+    transform: translateX(-850px);
+  }
+
+  50% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(-850px);
+  }
+}
+
+.ufo-img {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  animation: ufo-animation 4s linear infinite;
+}
+
+@keyframes ufo-animation {
+  0% {
+    transform: translateX(350px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(350px);
+  }
+}
+
+.bg-darkblue {
+  background-color: #090128;
+}
+
+.flag-img {
+  transform: rotate(-5deg);
+}
+
+.transform-rotate {
+  transform: rotate(5deg);
+}
+
+
+
+
+
+
+@media (min-width:576px) {
+  :root {
+    --fs-12: 12px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-32: 32px;
+    --fs-70: 70px;
+  }
+
+  .play_now_btn {
+    padding: 15px 50px;
+  }
+
+
+}
+
+@media (min-width:992px) {
+  .vh_100_lg {
+    min-height: 100vh;
+  }
+
+  .ufo-img {
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    animation: ufo-animation 4s linear infinite;
+  }
+
+  @keyframes ufo-animation {
+    0% {
+      transform: translateY(150px);
+    }
+
+    50% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(150px);
+    }
+  }
 }
