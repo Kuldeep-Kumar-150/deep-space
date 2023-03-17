@@ -17,7 +17,7 @@ const Footer = () => {
         alt="man-in-space-suit"
       />
       <Container>
-        <div className="text-center pt-5 mt-5">
+        <div className="text-center pt-5 mt-sm-5">
           <a href="#">
             {" "}
             <img src={footerlogo} alt="logo" />

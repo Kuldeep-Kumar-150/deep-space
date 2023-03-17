@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <>
             <section className='aboutsection_bg_img position-relative py-5'>
-                <div className="lnear_bg"></div>
+                <div className="linear_bg"></div>
                 <Container className='py-5'>
                     <Row className='align-items-center'>
                         <Col lg={6}>
