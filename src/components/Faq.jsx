@@ -5,7 +5,7 @@ import ufo from "../assets/image/webp/ufo.webp";
 
 const Faq = () => {
   return (
-    <section className="py-5 bg-dark-blue">
+    <section className="py-5 bg-dark-blue"id="FAQS">
       <Container>
         <div className="text-center">
           <h2 className="ff_grandlander fs_70 text-white">FAQs</h2>
@@ -45,6 +45,15 @@ const Faq = () => {
               <Accordion.Item eventKey="3" className="mt-4">
                 <Accordion.Header className="ff_grandlander">
                   <span className="pe-2">4.</span> Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit ?
+                </Accordion.Header>
+                <Accordion.Body className="ff_grandlander ps-5 fs-16">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4" className="mt-4">
+                <Accordion.Header className="ff_grandlander">
+                  <span className="pe-2">5.</span> Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit ?
                 </Accordion.Header>
                 <Accordion.Body className="ff_grandlander ps-5 fs-16">

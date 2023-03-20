@@ -7,18 +7,18 @@ import MyNavbar from './components/MyNavbar';
 import HeroSection from './components/HeroSection';
 import AboutUs from './components/AboutUs';
 import GamePlay from './components/GamePlay';
-// import Slider from './components/Slider';
 import "./App.css";
 import TeamFrame from "./components/TeamFrame";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Roadmap from "./components/Roadmap";
 import MySlider from "./components/MySlider";
+import ReactNav from "./components/ReactNav";
 
 function App() {
   return (
     <>
-      <div className='bg-image-header vh_100_lg d-flex flex-column overflow-hidden'>
+   {/* <div className='bg-image-header vh_100_xl d-flex flex-column overflow-hidden'>
         <MyNavbar />
         <HeroSection />
       </div>
@@ -28,7 +28,8 @@ function App() {
       <Roadmap />
       <TeamFrame />
       <Faq />
-      <Footer />
+      <Footer /> */}
+      <ReactNav/>
     </>
   );
 }

@@ -67,6 +67,10 @@
   font-family: 'Grandstander';
 }
 
+.nav_links:hover {
+  font-weight: 700;
+}
+
 .nav_links::before {
   content: "";
   position: absolute;
@@ -166,14 +170,14 @@
 
 .man-diamond-img {
   position: absolute;
-  bottom: 80px;
+  bottom: 0;
   left: -50px;
-  animation: mymove 3s linear infinite;
+  animation: mymove 1.5s linear infinite;
 }
 
 @keyframes mymove {
   0% {
-    transform: translateX(150px);
+    transform: translateX(10px);
   }
 
   50% {
@@ -181,7 +185,7 @@
   }
 
   100% {
-    transform: translateX(150px);
+    transform: translateX(10px);
   }
 }
 
@@ -235,22 +239,22 @@
 
 .ufo-img {
   position: absolute;
-  right: 50%;
-  bottom: 0;
+  right: 0;
+  bottom: 150px;
   animation: ufo-animation 4s linear infinite;
 }
 
 @keyframes ufo-animation {
   0% {
-    transform: translateX(350px);
+    transform: translateY(150px);
   }
 
   50% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   100% {
-    transform: translateX(350px);
+    transform: translateY(150px);
   }
 }
 
@@ -283,6 +287,50 @@
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09002E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.hide_nav {
+  height: 100vh;
+  background-color: rgb(0, 255, 0);
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 0.6s ease-in-out;
+}
+
+.show_nav {
+  height: 100vh;
+  background-color: rgb(0, 255, 0);
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.6s ease-in-out;
+}
+
+.shadow-0 {
+  box-shadow: unset !important;
+}
+
+.game-play-bgcolor {
+  background: linear-gradient(180deg, #000013 -10%, rgba(1, 0, 19, 0.68) 15.94%, rgba(4, 0, 25, 0.56) 50.61%, rgba(6, 0, 29, 0.2) 72.8%, #090128 100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
 
 @media (min-width:576px) {
   :root {
@@ -313,29 +361,8 @@
 
 }
 
-@media (min-width:992px) {
-  .vh_100_lg {
+@media (min-width:1200px) {
+  .vh_100_xl {
     min-height: 100vh;
-  }
-
-  .ufo-img {
-    position: absolute;
-    right: 0;
-    bottom: 150px;
-    animation: ufo-animation 4s linear infinite;
-  }
-
-  @keyframes ufo-animation {
-    0% {
-      transform: translateY(150px);
-    }
-
-    50% {
-      transform: translateY(0);
-    }
-
-    100% {
-      transform: translateY(150px);
-    }
   }
 }

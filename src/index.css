@@ -149,7 +149,7 @@
 /*  ACCORDIAN  */
 .accordion-button:not(.collapsed) {
   color: #ffffff !important;
-  background-color: #090128 !important;
+  background-color: transparent !important;
   box-shadow: none !important;
 }
 .accordion-button:focus {

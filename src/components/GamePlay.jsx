@@ -8,7 +8,8 @@ import { Container } from 'react-bootstrap'
 const GamePlay = () => {
     return (
         <>
-            <section className='game-play-bgimage py-lg-5 position-relative overflow-hidden'>
+            <section className='game-play-bgimage py-lg-5 position-relative overflow-hidden' id='Games'>
+                <div className='game-play-bgcolor'></div>
                 <Container className='mt-5 pb-5 mb-5'>
                     <h3 className='text-center text-white fs_70 fs-semibold ff_grandlander py-3 py-lg-5'>Game Play</h3>
                     <div className="position-relative">

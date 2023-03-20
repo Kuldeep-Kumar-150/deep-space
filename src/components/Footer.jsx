@@ -10,7 +10,7 @@ import telegramlogo from "../assets/image/svg/telegramLogo.svg";
 import maninspacesuit from "../assets/image/webp/man-in-space-suit.png";
 const Footer = () => {
   return (
-    <section className="pt-5 pb-2 footer-bg-img position-relative">
+    <section className="pt-5 pb-2 footer-bg-img position-relative" id="FOOTER">
       <img
         className="man-in-space-suit d-none d-md-block"
         src={maninspacesuit}

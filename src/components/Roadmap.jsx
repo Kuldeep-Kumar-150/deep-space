@@ -14,7 +14,7 @@ import rocket2 from "../assets/image/webp/rocket2.png";
 
 const Roadmap = () => {
   return (
-    <section className="py-5 roadmap-bg position-relative">
+    <section className="py-5 roadmap-bg position-relative"id="HOME">
       <img
         width={323}
         height={460}
